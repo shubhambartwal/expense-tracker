@@ -1,4 +1,3 @@
-import ExpenseDate from './ExpenseDate';
 import './NewExpense.css';
 import ExpenseForm from "./ExpenseForm";
 const NewExpense =(props)=>{
