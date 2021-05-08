@@ -1,4 +1,3 @@
-import ExpenseItem from './ExpenseItem';
 import './Expenses.css';
 import {useState} from "react";
 import Card from './Card';
@@ -16,11 +15,12 @@ function Expenses(props){
     });
  
     return(
-        <li><Card className="expenses">
+        <div>
+        <Card className="expenses">
         <ExpensesFilter selected={filterYear} onChangeFilter={filterChangeHandler} /> 
        <ExpensesList  items={filterExpenses} />     
         </Card>
-        </li>);
+        </div>);
         
 }
 export default Expenses;
